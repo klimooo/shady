@@ -18,10 +18,10 @@ import (
 
 	"github.com/fsnotify/fsnotify"
 
-	"github.com/polyfloyd/shady/encode"
-	"github.com/polyfloyd/shady/glslsandbox"
-	"github.com/polyfloyd/shady/renderer"
-	"github.com/polyfloyd/shady/shadertoy"
+	"github.com/klimooo/shady/encode"
+	"github.com/klimooo/shady/glslsandbox"
+	"github.com/klimooo/shady/renderer"
+	"github.com/klimooo/shady/shadertoy"
 )
 
 func main() {

@@ -62,7 +62,7 @@ func (st ShaderToy) Sources() (map[renderer.Stage][]renderer.Source, error) {
 		ss = append(ss, s)
 	}
 
-	glslVersion := "150"
+	glslVersion := "400"
 
 	return map[renderer.Stage][]renderer.Source{
 		renderer.StageVertex: {renderer.SourceBuf(fmt.Sprintf(`

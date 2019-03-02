@@ -75,7 +75,6 @@ func (st ShaderToy) Sources() (map[renderer.Stage][]renderer.Source, error) {
 		renderer.StageFragment: func() []renderer.Source {
 			ss := []renderer.Source{}
 			ss = append(ss, renderer.SourceBuf(fmt.Sprintf(`
-				#version %s
 				uniform vec3 iResolution;
 				uniform float iTime;
 				uniform float iTimeDelta;
@@ -85,7 +84,7 @@ func (st ShaderToy) Sources() (map[renderer.Stage][]renderer.Source, error) {
 				uniform vec4 iDate;
 				uniform float iSampleRate;
 				uniform vec3 iChannelResolution[4];
-			`, glslVersion)))
+			`)))
 			for _, res := range st.resources {
 				ss = append(ss, renderer.SourceBuf(res.UniformSource()))
 			}

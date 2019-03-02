@@ -66,7 +66,7 @@ func (st ShaderToy) Sources() (map[renderer.Stage][]renderer.Source, error) {
 
 	return map[renderer.Stage][]renderer.Source{
 		renderer.StageVertex: {renderer.SourceBuf(fmt.Sprintf(`
-			#version %s
+			#version 400
 			attribute vec3 vert;
 			void main(void) {
 				gl_Position = vec4(vert, 1.0);

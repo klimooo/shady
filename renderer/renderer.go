@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/go-gl/gl/v3.3-core/gl"
-	"github.com/klimooo/shady/egl"
+	"github.com/polyfloyd/shady/egl
 )
 
 var initGLOnce sync.Once

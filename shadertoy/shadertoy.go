@@ -71,7 +71,7 @@ func (st ShaderToy) Sources() (map[renderer.Stage][]renderer.Source, error) {
 			void main(void) {
 				gl_Position = vec4(vert, 1.0);
 			}
-		`, glslVersion))},
+		`))},
 		renderer.StageFragment: func() []renderer.Source {
 			ss := []renderer.Source{}
 			ss = append(ss, renderer.SourceBuf(fmt.Sprintf(`
